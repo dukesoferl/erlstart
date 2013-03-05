@@ -4,7 +4,7 @@
 FW_PACKAGE_NAME="erlstart"
 FW_PACKAGE_VERSION="0.0.3"
 FW_PACKAGE_MAINTAINER="Paul Mineiro <paul-fw@mineiro.com>"
-FW_PACKAGE_SHORT_DESCRIPTION="A short description."
+FW_PACKAGE_SHORT_DESCRIPTION="Some scripts for starting/stopping/interacting with an Erlang VM."
 FW_PACKAGE_DESCRIPTION=`cat README`
 FW_PACKAGE_ARCHITECTURE_DEPENDENT="0"
 
@@ -49,7 +49,4 @@ FW_RPM_CREATEREPO_INCREMENTAL=${FW_RPM_CREATEREPO_INCREMENTAL-"auto"}
 # these commands will be run after a successful createrepo run
 FW_RPM_POSTCREATEREPO_COMMANDS=${FW_RPM_POSTCREATEREPO_COMMANDS-"{ cd /var; rsync -a yum /var/package/dukes; }"}
 # here's a suggestion:
-# FW_RPM_POSTCREATEREPO_COMMANDS="gpg --detach-sign --armor repodata/repomd.xml" 
-
-# set to the directory in which version-named tags will be created
-FW_SUBVERSION_TAG_ROOT="https://erlrc.googlecode.com/svn/tags/erlstart"
+# FW_RPM_POSTCREATEREPO_COMMANDS="gpg --detach-sign --armor repodata/repomd.xml"
