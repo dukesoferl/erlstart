@@ -2,7 +2,7 @@
 # variable FW_PACKAGE_DEFAULT_MAINTAINER if non-empty at init time
 
 FW_PACKAGE_NAME="${BUILD_PREFIX}erlstart"
-FW_PACKAGE_VERSION="0.0.3"
+FW_PACKAGE_VERSION="0.0.4"
 FW_PACKAGE_MAINTAINER="Paul Mineiro <paul-fw@mineiro.com>"
 FW_PACKAGE_SHORT_DESCRIPTION="Some scripts for starting/stopping/interacting with an Erlang VM."
 FW_PACKAGE_DESCRIPTION=`cat README`

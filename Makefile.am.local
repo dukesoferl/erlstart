@@ -2,3 +2,5 @@
 
 # travis uses 'make test' instead of 'make check'
 test: check
+
+MAINTAINERCLEANFILES += test-driver
