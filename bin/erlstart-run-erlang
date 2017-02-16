@@ -28,6 +28,13 @@ node_name_file=${node_name_file-/var/lib/erlstartnode}
 hostname=${hostname-`get_hostname`}
 node_name=`basename "$node_name_file"`
 
+if test -f "$node_name_file" && \
+   test true = "`erlstart-eval 'true' 2>/dev/null`" 2>/dev/null
+then
+   echo "$id: already started." 1>&2
+   exit 0
+fi
+
 for var in cookie ; do
   eval test -z \"\${$var}\" && {
     echo "$id: variable $var not specified" 1>&2
