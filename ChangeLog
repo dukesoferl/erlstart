@@ -1,3 +1,6 @@
+Version 0.0.6
+  * always use BUILD_PREFIX
+
 Version 0.0.5
   * fix for infinite looping restart case, if the node appears to be running
   say so and exit
